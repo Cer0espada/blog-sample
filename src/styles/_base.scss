@@ -1,0 +1,42 @@
+$light-blue: rgb(0, 122, 255);
+$dark-blue:rgb(10, 132, 225);
+
+$light-green:rgb(52, 199, 89);
+$dark-green:rgb(48, 209, 88);
+
+$light-purple: rgb(52, 199, 90);
+$dark-purple:rgb(94, 92, 230);
+
+$light-orange:rgb(225, 149, 0);
+$dark-orange: rgb(225, 159, 10);
+
+$light-pink: rgb(255, 45, 85);
+$dark-pink: rgb(255, 55, 95);
+
+$light-red: rgb(255, 59, 48);
+$dark-red:rgb(255, 69, 58);
+
+$light-teal: rgb(90, 200, 250);
+$dark-teal: rgb(100, 210, 255);
+
+$light-yellow:rgb(255, 204, 0);
+$dark-yellow: rgb(255, 214, 10);
+
+$black:rgb(28, 28, 30);
+//font 
+$font-primary:'Poppins',
+sans-serif;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $font-primary;
+    font-weight: 300px;
+    color: $black;
+}
