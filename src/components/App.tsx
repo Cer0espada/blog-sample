@@ -1,5 +1,6 @@
 import React from 'react';
-import {Router, Route, Switch} from 'react-router';
+import {BrowserRouter as Router,Route, Switch} from 'react-router-dom';
+import Header from './Header';
 import MainBlogPage from './MainBlogPage';
 
 const App = () => {
@@ -7,8 +8,9 @@ const App = () => {
     return(
         <main className="main-container">
             <Router>
+                <Header />
                 <Switch>
-                    
+                    <Route path="/" exact component={MainBlogPage}></Route>
                 </Switch>
             </Router>
         </main>

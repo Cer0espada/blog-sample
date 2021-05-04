@@ -1,0 +1,38 @@
+.search-bar{
+    display: flex;
+    width: 90%;
+    align-content: flex-end;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    &-container{
+        display: flex;
+        flex-direction: row;
+        align-content:flex-end;
+
+        &>*{
+            margin: 0 .5rem;
+
+            &:last-child{
+                margin-right:0rem;
+            }
+        }
+      
+        i{
+            color: $light-blue;
+            font-size: 1rem;
+            
+            &:hover{
+                cursor: pointer ;
+            }
+ 
+        }
+
+        &__input{
+            color: $light-blue;
+           border: none;
+
+        }
+    }
+
+}

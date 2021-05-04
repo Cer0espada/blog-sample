@@ -1,0 +1,41 @@
+.blog-post-grid{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $light-red;
+    width: 100%;
+    &-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: $light-red;
+        
+        &__title-container{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            &--title{
+
+            }
+
+            &--dropdown{
+                align-self: flex-end;
+                justify-self: flex-end;
+
+                &.filter{
+                    align-self: flex-end;
+                }
+            }
+
+            
+        }
+        &__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            row-gap: 1rem;
+        }
+    }
+
+    
+}

@@ -1,0 +1,23 @@
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    &-container{
+        display: flex;
+        flex-direction: column;
+        &__heading-container{
+            display: flex;
+            flex-direction: column;
+            &--heading{
+                font-size: 1.2rem;
+            }
+            &--icon{
+                color: $prosparity-pink;
+
+                &.down{
+                    transform: rotateX(180deg);
+                    transition: ease .2s;
+                }
+            }
+        }
+    }
+}

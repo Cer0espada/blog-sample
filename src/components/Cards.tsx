@@ -2,24 +2,32 @@ import React from 'react';
 import balcony from '../img/balcony.jpg';
 import author from '../img/author.jpg';
 
-const Cards:React.FC = () => {
+interface Props{
+long?:string
+}
+
+const Cards:React.FC<Props> = ({long}) => {
     return(
-        <div className="blog-cards">
-        <div className="blog-cards-container">
-            <figure className="blog-cards-image-container">
-                <img src={balcony} alt="" className="blog-cards-image-container__image"/>
+        <div className={long ? "blog-cards-long": "blog-cards"}>
+        <div className={long? "blog-cards-long-container" :"blog-cards-container"}>
+                <figure className={long ? "blog-cards-long-image-container": "blog-cards-image-container"}>
+                <img src={balcony} alt="" className={"blog-cards-image-container__image"}/>
             </figure>
 
-            <div className="blog-cards-text-container">
-                <h1 className="blog-cards-text-container__title">title</h1>
-                <p className="blog-cards-text-container__body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis consequuntur possimus blanditiis expedita recusandae vel amet! Accusamus nesciunt explicabo illum veritatis nostrum quaerat, porro, asperiores exercitationem incidunt amet rem quis.</p>
+                <div className={long ? "blog-cards-long-text-container": "blog-cards-text-container"}>
+                    <h2 className="blog-cards-text-container__category category">category</h2>
+                <h1 className={"blog-cards-text-container__title"}>title</h1>
+                    <p className={long ? "blog-cards-long-text-container__body": "blog-cards-text-container__body"}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis consequuntur possimus blanditiis expedita recusandae vel amet! Accusamus nesciunt explicabo illum veritatis nostrum quaerat, porro, asperiores exercitationem incidunt amet rem quis.</p>
 
-                    <div className="blog-cards-text-container__author-container">
-                        <figure className="blog-cards-text-container__author-container--img-container">
+                    <div className={"blog-cards-text-container__author-container"}>
+                        <figure className={"blog-cards-text-container__author-container--img-container"}>
                             <img src={author} alt=""/>
                         </figure>
-
-                        <div className="blog-cards-text-container__author-container--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit praesentium dignissimos voluptatum vel quas dolor inventore maiores, reiciendis laudantium beatae alias esse veniam debitis minus sequi obcaecati, illum quod earum.</div>
+                        <div className={"blog-cards-text-container__author-container--text-container"}>
+                            <p className={"blog-cards-text-container__author-container--text-container__text"}>Maya Lombardi</p>
+                            <p className={"blog-cards-text-container__author-container--text-container__date"}>{`Nov 2, 2020`}</p>
+                        </div>
+                        
                 </div>
             </div>
 

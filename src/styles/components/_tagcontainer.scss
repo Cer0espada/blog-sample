@@ -1,0 +1,53 @@
+.blog-tag-container{
+    display: flex;
+    flex-direction: column;
+    overflow: none;
+    width: 100%;
+    max-width: 75em;
+    
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        max-width: 75em;
+        position: relative;
+
+    }
+
+    &__left-chevron{
+        left: 10vw;
+        z-index: 200;
+
+        color: $prosparity-pink;
+
+    }
+    &__right-chevron{ 
+            right: 10vw;
+
+            color: $prosparity-pink;
+    }
+    &__left-chevron,&__right-chevron{ 
+        position: absolute;
+        top: 50%;
+        font-size: 5rem;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__card-carousel{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        transition: ease .2s;
+        overflow-x: scroll;
+
+        width: 100%;
+
+        column-gap: 1rem;
+        max-width:75em;
+
+    }
+
+    
+
+   
+}
