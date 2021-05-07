@@ -1,0 +1,44 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    // height: 10vh;
+    width: 100%;
+    background-color: $black;
+    align-items: center;
+    padding:2rem;
+    height: 30vh;
+
+    &-container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        color: whitesmoke;
+        background-color: $black;
+        padding: 2rem;
+
+        &__heading{
+            font-size: 2rem;
+        }
+
+        &__text-{
+            color: whitesmoke;
+        }
+
+        &__icon-container{
+            display: flex;
+            flex-direction: row;
+            &:first-child {
+                margin-left: 0rem !important;
+            }
+
+            &--icon{
+                color: $prosparity-pink;
+                margin: 1rem;
+                font-size: 2rem;
+            }
+            
+        }
+    }
+
+
+}

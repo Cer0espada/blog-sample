@@ -55,6 +55,7 @@
                 justify-items: center;
                 text-align: center;
 
+
                 img {
                     width: 40px;
                     height: 40px;
@@ -62,6 +63,9 @@
 
                 i{
                     font-size: 2rem;
+                    &.education{
+                        font-size: 3rem;
+                    }
                 }
                 p{
                     align-self: flex-start;

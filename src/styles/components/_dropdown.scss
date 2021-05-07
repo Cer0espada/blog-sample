@@ -4,18 +4,51 @@
     &-container{
         display: flex;
         flex-direction: column;
+        position: relative;
+        // min-width: 25vw;
         &__heading-container{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            align-items: center;
+            justify-items: center;
+            width: 100%;
+
             &--heading{
-                font-size: 1.2rem;
+                margin-left: .5rem;
+                &:hover{
+                    cursor: pointer;
+                }
             }
             &--icon{
                 color: $prosparity-pink;
-
+                padding-left: .5rem;
+                &.up{
+                    transition: ease .5s;
+                }
                 &.down{
-                    transform: rotateX(180deg);
-                    transition: ease .2s;
+                    transform: rotateZ(180deg);
+                    transition: ease .5s;
+                }
+            }
+        }
+        &__item-container{
+            position: absolute;
+            // width: 100%;
+            top: 40px;
+            right:0px;
+            background: white;
+            padding: 1rem;
+            font-size: 1rem;
+
+            &.none{
+                display: none;
+            }
+
+            &>*{
+                &:hover{
+                    cursor: pointer;
+                    text-decoration: underline;
+                    
                 }
             }
         }

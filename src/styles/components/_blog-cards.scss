@@ -4,7 +4,7 @@
     min-width: 275px;
     max-height: 600px;
     max-width: 300px;
-    border: 1px solid $light-green;
+    border: 1px solid $prosparity-pink;
     
     justify-self:center;
 
@@ -49,6 +49,7 @@
         flex-direction: column;
         width: 90%;
         align-self: center;
+        padding: .5rem;
 
         &__category {
             text-transform: uppercase;

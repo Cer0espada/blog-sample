@@ -23,7 +23,7 @@ const TagContainer = () => {
     return(
         // <TagContainerContextProvider>
         <div className="blog-tag-container">
-            <TitleContainer title="blog container" heading="h6" addedClass={"blog-tag-container__heading"}/> 
+            <TitleContainer title="#tag container" heading="h6" addedClass={"blog-tag-container__heading"}/> 
             <div className="blog-tag-container__wrapper">
                 
 

@@ -30,23 +30,23 @@ const MainBlogPage:React.FC = () => {
                 <div className="main-blog-page-container__category-container">
                     <div className="main-blog-page-container__category-container--topic-container">
                         <TitleContainer title="Topics" heading="h4" addedClass="title-container__topic"/>
-                        <i className="fas fa-globe-africa"></i>
+                        <i className="fas fa-globe-africa happening-now"></i>
                         <p className="happening-now">Happening Now</p>
 
-                        <i className="fas fa-dollar-sign"></i>
+                        <i className="fas fa-dollar-sign financial-literacy"></i>
                         <p className="financial-literacy">Financial Literacy</p>
 
-                        <div className="fas fa-graduation-cap"></div>
+                        <p className="fas fa-graduation-cap education"></p>
                         <p className="education">Education</p>
 
-                        <i className="fas fa-female"></i>
+                        <i className="fas fa-female black-female-excellence"></i>
                         <p className="black-female-excellence">Black Female Excellence</p>
 
                         <img src={logo} alt=""/>
                         <p className="prosparity prosparity-topic">Prosparity</p>
                         
                     </div>
-
+                    
                     <div className="main-blog-page-container__category-container--tag-container">
                         <TitleContainer title="Tags" heading="h4" addedClass="title-container__topic" />
                         <p className="tags">#first tag</p>
@@ -58,8 +58,9 @@ const MainBlogPage:React.FC = () => {
                     </div>
                     </div>
                 </div>
-
+                    <hr/>
                 <TagContainer />
+           
                 <BlogPostGrid />
             </div>
         </div>

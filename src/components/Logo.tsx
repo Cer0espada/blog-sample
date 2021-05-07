@@ -5,7 +5,10 @@ const Logo = () => {
     return(
         <div className="logo-container">
             <img src={logo} alt="Prosparity Project Logo" />
-            <p>Prosp<span>(</span>A<span>)</span>rity <br/>Project</p>
+            <a href="https://theprosparityproject.org">
+                <p>Prosp<span>(</span>A<span>)</span>rity <br/>Project</p>
+            </a>
+            
         </div>
     )
 }
