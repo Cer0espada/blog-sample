@@ -10,7 +10,7 @@ const TagContainer = () => {
 
     const someArray = [<Cards />,
          <Cards />, 
-        <Cards />,
+         <Cards />,
          <Cards />, 
          <Cards />]
     // subtracting from the length to determine how many blogMod widths to move , and how many we want to display at a time

@@ -3,6 +3,7 @@ import {BrowserRouter as Router,Route, Switch} from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import MainBlogPage from './MainBlogPage';
+import BlogPage from './BlogPage';
 
 const App = () => {
     
@@ -12,6 +13,7 @@ const App = () => {
                 <Header />
                 <Switch>
                     <Route path="/" exact component={MainBlogPage}></Route>
+                    <Route path="/blog/:id" exact component ={BlogPage}></Route>
                 </Switch>
                 <Footer />
             </Router>
