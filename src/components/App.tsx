@@ -4,6 +4,7 @@ import Header from './Header';
 import Footer from './Footer';
 import MainBlogPage from './MainBlogPage';
 import BlogPage from './BlogPage';
+import EditorSlate from './EditorSlate'
 
 const App = () => {
     
@@ -14,6 +15,7 @@ const App = () => {
                 <Switch>
                     <Route path="/" exact component={MainBlogPage}></Route>
                     <Route path="/blog/:id" exact component ={BlogPage}></Route>
+                    <Route path="/edit" exact component={EditorSlate}></Route>
                 </Switch>
                 <Footer />
             </Router>

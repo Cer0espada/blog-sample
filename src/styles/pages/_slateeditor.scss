@@ -1,0 +1,14 @@
+.slate-editor-page{
+    display: flex;
+    flex-direction: column;
+
+    &-container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+    }
+}
