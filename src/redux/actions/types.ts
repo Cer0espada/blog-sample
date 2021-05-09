@@ -1,3 +1,6 @@
+import Paragraph from "antd/lib/skeleton/Paragraph";
+import { Action } from "redux";
+
 export interface DropDownInputs {
     named: string;
     classed: string;
@@ -57,8 +60,43 @@ export enum BlogClassEnum{
     Education="education",
     Prosparity="prosparity"
 }
+////////////////Toolbar
 
-// export interface Recent{
-//     type:BlogSortActionTypes.Recent;
-//     payload:DropDownInputs
-// }
+export enum SlateToolBarEnum{
+    HeadingOff="HeadingOff",
+    HeadingOn = "HeadingOn",
+    Paragraph ="Paragraph",
+    ItalicsOn = "ItalicsOn",
+    ItalicsOff = "ItalicsOff",
+    UnderlineOn = "UnderlineOn",
+    UnderlineOff = "UnderlineOff",
+    Image = "Image",
+    QuoteOn = "quoteOn",
+    QuoteOff = "quoteOff",
+    EmbedOn = "embedOn",
+    EmbedOff = "embedOff",
+    BoldOn = "boldOn",
+    BoldOff = "boldOff"
+}
+
+export interface SlateToolBarAction extends Action{
+    type:string;
+    payload:SlateImageState
+}
+
+export interface SlateToolBarState {
+    heading: boolean,
+    paragraph: boolean,
+    italics: boolean,
+    underline: boolean,
+    image: SlateImageState,
+    quote: boolean,
+    embed: boolean,
+    bold: boolean
+}
+
+export interface SlateImageState {
+    imageName: string,
+    imagePreview: Object | File,
+    image: Object | File
+}

@@ -1,0 +1,22 @@
+.slate-tool-bar{
+    display: flex;
+    flex-direction: column;
+    &-container{
+        display: flex;
+        flex-direction: row;
+
+        &__icon{
+            margin: .2rem;
+            padding: .8rem;
+            background-color: $grey-1-light;
+            border-radius: .75rem;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        &*>{
+            margin: 1rem 0rem;
+        }
+    }
+}
