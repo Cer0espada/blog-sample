@@ -1,0 +1,50 @@
+.quill-editor{
+    display: flex;
+    flex-direction: column;
+
+    &-container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+
+        &__form{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            width: 85vw;
+            margin-left:2rem ;
+            margin-bottom: 1rem;
+            &>*{
+                margin:.25rem 0rem;
+            }
+
+            &--main-image-preview{
+                display: flex;
+                align-self: center;
+                object-fit: cover;
+                object-position: center center;
+                width: 40vw;
+                height: 40vh;
+            }
+
+            &--author-image-preview{
+                display: flex;
+                align-self: center;
+                object-fit: cover;
+                object-position: center center;
+                width: 40vw;
+                height: 40vh;
+            }
+        }
+     
+
+        &__quill{
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            height: 80vh;
+            width: 85vw;
+            margin-bottom: 10vh;
+        }
+    }
+}

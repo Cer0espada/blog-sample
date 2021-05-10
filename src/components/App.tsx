@@ -4,7 +4,7 @@ import Header from './Header';
 import Footer from './Footer';
 import MainBlogPage from './MainBlogPage';
 import BlogPage from './BlogPage';
-import EditorSlate from './EditorSlate'
+import QuillEditor from './QuillEditor'
 
 const App = () => {
     
@@ -15,7 +15,7 @@ const App = () => {
                 <Switch>
                     <Route path="/" exact component={MainBlogPage}></Route>
                     <Route path="/blog/:id" exact component ={BlogPage}></Route>
-                    <Route path="/edit" exact component={EditorSlate}></Route>
+                    <Route path="/edit" exact component={QuillEditor}></Route>
                 </Switch>
                 <Footer />
             </Router>

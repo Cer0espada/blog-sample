@@ -20,7 +20,7 @@ const SlateToolBarIcon:React.FC<Props> = ({addedClass, name}) => {
         }
         
     }
-
+    
 
     return(
         <div className="slate-tool-bar-icon">
