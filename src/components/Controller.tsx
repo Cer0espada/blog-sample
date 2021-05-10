@@ -42,7 +42,7 @@ export const CreateAuthor = async (name:string, imgPath:string) => {
         .catch((error) => console.log("Error adding document", error))
 
 
-    return Promise.resolve(existingRef.docs[0].id)
+    return uuid
 
 };
 
@@ -70,9 +70,8 @@ export const CreateBlogPost = async (html: string, author:string, authorid:strin
     }
 
     //handle existing entry 
-    const existingRef = (await db.collection('posts').where('title', "==", title).get());
+    const existingRef = (await db.collection('posts').where("title", "==", title).get());
 
-    console.log(existingRef.empty)
     if (!existingRef) {
         new Error('Blog Post already exists')
         console.error('Blog Post already exists')

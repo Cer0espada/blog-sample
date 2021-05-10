@@ -15,8 +15,6 @@ dotenv.config()
 export type RootStore = ReturnType<typeof reducers>;
 const store = createStore(reducers, initialState, composeWithDevTools(applyMiddleware(thunk)));
 
-
-
 ReactDOM.render(
     <Provider store={store} >
          <App/>

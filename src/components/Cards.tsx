@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import balcony from '../img/balcony.jpg';
 import author from '../img/author.jpg';
 
@@ -8,7 +9,8 @@ long?:string
 
 const Cards:React.FC<Props> = ({long}) => {
     return(
-        <div className={long ? "blog-cards-long card-text-shadowing": "blog-cards card-text-shadowing"}>
+
+            <Link to="/blog/blog-post" className={long ? "blog-cards-long card-text-shadowing": "blog-cards card-text-shadowing"}>
         <div className={long? "blog-cards-long-container" :"blog-cards-container"}>
                 <figure className={long ? "blog-cards-long-image-container": "blog-cards-image-container"}>
                 <img src={balcony} alt="" className={"blog-cards-image-container__image"}/>
@@ -30,10 +32,11 @@ const Cards:React.FC<Props> = ({long}) => {
                         
                 </div>
             </div>
-
+            
 
         </div>
-        </div>
+
+        </Link>
     )
     
 }

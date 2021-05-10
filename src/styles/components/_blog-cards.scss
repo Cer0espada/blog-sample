@@ -7,6 +7,8 @@
     border: 1px solid $prosparity-pink;
     
     justify-self:center;
+    text-decoration: none;
+    color: $black;  
 
     &-container{
         display: flex;
@@ -16,6 +18,8 @@
         max-width: 400px;
         max-height: 600px;
         align-self: center;
+        text-decoration: none;
+        color: $black;
     }
 
     &__category{
@@ -111,6 +115,7 @@
     height: 400px;
     justify-self:center;
     border: 1px solid $prosparity-pink;
+    text-decoration: none;
 
     &-container {
         display: flex;
@@ -119,6 +124,7 @@
         width: 100%;
        
         align-self: center;
+        text-decoration: none;
     }
     
 
@@ -150,6 +156,7 @@
         align-self: center;
         justify-self: center;
         margin-left: 2rem;
+        text-decoration: none;
 
         &__category {
             text-transform: uppercase;

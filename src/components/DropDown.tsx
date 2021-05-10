@@ -14,8 +14,6 @@ interface Props{
 
 const DropDown:React.FC<Props> = ({intro, objArray, filterDropDown, sortedDropDown}) => {
     const [clicked, setClicked] = useState(false);
-    const [named, setNamed] = useState<string>(objArray[0].named);
-    const [classedName, setClassedName] = useState<string>(objArray[0].classed);
 
     const dropdownRef = useRef<HTMLElement>(null);
 
@@ -27,16 +25,8 @@ const DropDown:React.FC<Props> = ({intro, objArray, filterDropDown, sortedDropDo
 
     const handleDropDownClick =() => setClicked(prevState => !prevState); 
     const handleItemClick = (dropdownInput:DropDownInputs):void => {
-        // setNamed(dropdownInput.name)
-        // setClassedName(dropdownInput.classed)
-        console.log('click')
-        if(filterDropDown){
-            dispatch({type:(dropdownInput.named)})
-            console.log(dropdownInput.named)
-        }
-        if(sortedDropDown){
-            dispatch({type:dropdownInput.named})
-        }
+   
+        dispatch({ type: dropdownInput.named })
         setClicked(false)
     }
 
